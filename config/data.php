@@ -35,7 +35,7 @@ $exp_has_portfolio = false;
    FORMATO:
    * Ruta del archivo -> img/nombre-del-archivo
  */
-$homeImage = "img/home.jpg";
+$homeImage = "img/iStock-1179565008.jpg";
 
 //-- Inicio --
 $deckIntro = "<strong>Resuelve retos con Design Thinking</strong> es un programa de 16 horas de aprendizaje en línea.<br><br>

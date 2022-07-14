@@ -103,7 +103,7 @@ $currentSlab = getDeckData("current_slab");
           </div>
           <div class="col-lg align-self-center intro intro-video">
             <div class="heading-img">
-              <img class="video-block" src="img/home.jpg" alt="video" />
+              <img class="video-block" src="img/iStock-1179565008.jpg" alt="video" />
               <img class="bg-img" src="img/shapes/heading.png" alt="heading png">
             </div>
             <!--BEGIN: Botones-->
