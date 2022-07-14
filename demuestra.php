@@ -71,6 +71,8 @@ if(isset($_COOKIE[$name])){
   }
 }
 
+$case = null;
+
 
 ?>
 <!DOCTYPE html>
@@ -149,7 +151,7 @@ if(isset($_COOKIE[$name])){
             <!--Indicador paso--> 
             <div class="indicador-paso">
               <div class="indicador-paso-bg d-flex justify-content-center align-items-center">
-                <p class="mb-0"><?php echo ($i+1);?></p>
+              <p class="mb-0"><?php if(isset($case)) { echo $i;} else {echo ($i + 1);}?></p>
               </div>
             </div> <!--END: Indicador paso-->
             <!--Instrucción principal del paso-->
@@ -183,7 +185,7 @@ if(isset($_COOKIE[$name])){
                   <div class="subpasos row">
                   <?php for($j = 0;$j<count($act2_instructions[$slabNum-1]["instruction_list"][$i]["subinstruction_list"]);$j++){?>
                         <div class="subpaso">
-                          <h4><?php echo ($i+1).".".($j+1)?></h4>
+                          <h4><?php if(isset($case)) { echo ($i).".".($j+1);} else { echo ($i+1).".".($j+1);}?></h4>
                           <p><?php echo $act2_instructions[$slabNum-1]["instruction_list"][$i]["subinstruction_list"][$j]["subinstruction"]?></p>
                           <!--Verificar si hay extras en el subpaso-->
                           <?php if(isset($act2_instructions[$slabNum-1]["instruction_list"][$i]["subinstruction_list"][$j]["subinstruction_sublist"])){?>
@@ -208,6 +210,8 @@ if(isset($_COOKIE[$name])){
             <?php }?>
 
             <?php } else if (isset($act2_instructions[$slabNum-1]["instruction_list"][$i]["case_title"])) {?>
+              <!--Caso existe-->
+              <?php $case = true?>
               <!--Si hay un caso de estudio-->
               <h5 class="mt-5 mb-3"><?php echo $act2_instructions[$slabNum-1]["instruction_list"][$i]["case_title"]?></h5>
               <!--Texto e imagen del caso-->

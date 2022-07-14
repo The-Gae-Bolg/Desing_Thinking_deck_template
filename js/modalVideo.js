@@ -39,6 +39,12 @@ $(document).ready(function () {
       //generate img code
       var img = '<img class="img-fluid" id="video" src="' + $videoSrc + '" />';
       $('#materialCont').html(img);
+
+      //descarga de imagen
+      let link= document.createElement('a');
+      link.setAttribute('href',$videoSrc);
+      link.setAttribute('download',$(this).data("link"));
+      link.click();
     } else {
       $('#materialCont').attr("class", "embed-responsive embed-responsive-16by9");
       //generate iframe code

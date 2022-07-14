@@ -2,12 +2,20 @@ body{
     padding-right: 0 !important;
 }
 
-.wd50{
-    width: 50% !important;
+.h-px-400{
+    height: 400px !important;
 }
 
-.wd80{
-    width: 80% !important;
+.hg100{
+    height: 100% !important;
+}
+
+.wd30{
+    width: 30% !important;
+}
+
+.wd100{
+    width: 100% !important;
 }
 
 .audio{
@@ -358,6 +366,12 @@ a i {
     }
 }
 
+@media (max-width: 1299px) {
+    .h-px-400{
+        height: 320px !important;
+    }
+}
+
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -365,7 +379,7 @@ a i {
     .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
-    .card, .wd80, .wd50{
+    .card, .wd100, .wd30{
         width: 100% !important;
     }
     .btn-responsive a, .btn-responsive button{
@@ -373,6 +387,9 @@ a i {
     }
     .material-display{
         display: block !important;
+    }
+    .h-px-400{
+        height: 450px !important;
     }
 }
 

@@ -88,7 +88,7 @@ $slabTitles = [
     "¿Quiénes? Análisis y mapeo", //Slab 6
     "¿Cómo generar la propuesta de valor?", //Slab 7
     "Ideación. Todo es válido por ahora", //Slab 8
-    "Prototipos. Probando… 1, 2, 3", //Slab 9
+    "Prototipos.<br> Probando… 1, 2, 3", //Slab 9
     "¿Funciona? Análisis de pruebas" //Slab 10
 ];
 
@@ -202,7 +202,7 @@ $banner = [
    * Indicar numero de material total
 */
 $materialTotal = [
-    4, //Slab 1
+    3, //Slab 1
     1, //Slab 2
     2, //Slab 3
     2, //Slab 4
@@ -236,7 +236,7 @@ $materialImg = [
     [   //slab 5
         [
             'img/pre-load/pre-load-10.png',
-            'context map',
+            'Context map',
             'img/material/context map.png',
             'context map.png'
         ]
@@ -286,7 +286,7 @@ $materialPdf = [
     [   //Slab 1
         [
             'img/pre-load/pre-load-2.png',
-            'p02 brown design thinking with cover ',
+            'p02 brown design thinking with cover',
             'assets/docs/tools/slab/3 p02_brown-design-thinking-with-cover-page-v2.pdf',
             '3 p02_brown-design-thinking-with-cover-page-v2.pdf'
         ]
@@ -315,12 +315,6 @@ $materialPdf = [
 $materialVideo = [
     [   //Slab 1
         [
-            'img/pre-load/pre-load-3.png',
-            'Introducción',
-            'assets/videos/0_Introduccion.mp4',
-            '0_Introduccion.mp4'
-        ],
-        [
             'img/pre-load/pre-load-4.png',
             'What Is Design Thinking An Overview',
             'assets/videos/1_What_Is_Design_Thinking_An_Overview.mp4',
@@ -338,7 +332,7 @@ $materialVideo = [
     [   //Slab 3
         [
             'img/pre-load/pre-load-7.png',
-            'GRAMS Gary van Broekhoven on helping you get to the why behind your customers',
+            'Helping you get to the why behind your customers',
             'assets/videos/GRAMS  Gary van Broekhoven on helping you get to the why behind your customers_360p.mp4',
             'GRAMS  Gary van Broekhoven on helping you get to the why behind your customers_360p.mp4'
         ],
@@ -352,7 +346,7 @@ $materialVideo = [
         ],
         [
             'img/pre-load/pre-load-9.png',
-            'How might we.mp4',
+            'How might we',
             'assets/videos/how might we.mp4',
             'how might we.mp4'
         ],
@@ -712,9 +706,8 @@ $act2_instructions = [
             ],
             //Paso 3
             [
-                "instruction" => "Puedes recurrir adicionalmente a la siguiente fuente: Miro Academy. (s. f.). Getting Started/Board navigation and toolbars. Academy Miro.
-                <br>
-                <a href='https://academy.miro.com/learn/course/getting-started-with-miro/getting-started/board-navigation-and-toolbars?page=1' class='tracker btn-outline-primary' target='_blank'>https://academy.miro.com/learn/course/getting-started-with-miro/getting-started/board-navigation-and-toolbars?page=1</a>",
+                "instruction" => "Puedes recurrir adicionalmente a la siguiente fuente: Miro Academy. (s. f.). Getting Started/Board navigation and toolbars. Academy Miro.",
+                "instruction_extra" =>  '<a href="https://academy.miro.com/learn/course/getting-started-with-miro/getting-started/board-navigation-and-toolbars?page=1" class="tracker text-center" target="_blank"><img src="img/logos/miro.png" alt="Logo canva"/></a>'
             ],
             //Paso 4
             [
@@ -887,7 +880,7 @@ $act2_instructions = [
                     ["subinstruction" => "Importa en el board la plantilla Context map.
                     <br>
                     <div class='d-flex justify-content-center logo-tools align-items-center'>
-                        <a href='assets/docs/tools/demuestra/context map.png' class='tracker btn btn-outline-primary' target='_blank'>Context map</a>
+                        <a href='assets/docs/tools/demuestra/context map.png' class='tracker btn btn-outline-primary' download='context map.png'>Context map</a>
                     </div>"],
                     ["subinstruction" => "Realiza un análisis PESTEL del contexto del Reto."],
                     ["subinstruction" => "Mapea los resultados en la plantilla."],
@@ -942,7 +935,7 @@ $act2_instructions = [
                     ["subinstruction" => "Importa en el board la plantilla de persona.
                     <br>
                     <div class='d-flex justify-content-center logo-tools align-items-center'>
-                        <a href='assets/docs/tools/demuestra/Persona canvas.jpeg' class='tracker btn btn-outline-primary' target='_blank'>Plantilla de persona</a>
+                        <a href='assets/docs/tools/demuestra/Persona canvas.jpeg' class='tracker btn btn-outline-primary' download='Persona canvas.jpeg'>Plantilla de persona</a>
                     </div>"],
                     ["subinstruction" => "Crea dos personas del proyecto."],
                     ["subinstruction" => "Guarda el enlace del board del proyecto, ya lo compartirás más adelante."],
@@ -997,7 +990,7 @@ $act2_instructions = [
                     ["subinstruction" => "Importa en el board la plantilla Value Proposition.
                     <br>
                     <div class='d-flex justify-content-center logo-tools align-items-center'>
-                        <a href='assets/docs/tools/demuestra/Value Proposition Canvas.jpeg' class='tracker btn btn-outline-primary' target='_blank'>Value Proposition</a>
+                        <a href='assets/docs/tools/demuestra/Value Proposition Canvas.jpeg' class='tracker btn btn-outline-primary' download='Value Proposition Canvas.jpeg'>Value Proposition</a>
                     </div>"],
                     ["subinstruction" => "Sigue los pasos de los videos de referencia."],
                     ["subinstruction" => "Crea una propuesta de valor para DiDi."],
